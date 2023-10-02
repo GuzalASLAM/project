@@ -1,0 +1,366 @@
+/* @media === all, print, speech, screen*/
+/* div {
+  display: none;
+  height: 200px;
+  background-color: black;
+}
+
+@media screen and (min-width: 1240px) {
+  div {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1240px) {
+  div {
+    display: block;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 840px) {
+  div {
+    background-color: orange;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  div {
+    background-color: coral;
+    height: 500px;
+  }
+} */
+
+/* breakpoint */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+
+}
+
+/* header start*/
+header {
+    min-height: 740px;
+    background-image: url(./images/project.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-h1 {
+    max-width: 734px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 1.28px;
+    text-transform: uppercase; 
+}
+.header-h4 {
+    max-width: 734px;
+    color: #fff;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;  
+}
+
+/* header end*/
+
+/*about start*/
+
+.about {
+    position: relative;
+    padding-top: 250px;
+}
+
+.experience {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%);
+    min-height: 300px;
+    background: #F7F7F7;
+    padding: 57px 130px;
+
+}
+
+.about-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.about-item {
+    width: 190px;
+    text-align: center;
+}
+
+.about-h4 {
+    color: #f7654a;
+    font-family: Oswald;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.about-h5 {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .about-p {
+    color: #999;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+   /* @media screen and (max-width: 1280px) {
+    .about-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    
+  }
+
+  @media screen and (max-width: 780px) {
+    .about-items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }  */
+
+
+  
+ 
+  .project-items {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  /* .project-item {
+    width: 350px;
+    height: 380px;
+
+  } */
+
+.project-h2 {
+ text-align: center;
+ margin-bottom: 60px;
+ font-family: Oswald;
+ font-size: 36px;
+ font-weight: 500;
+ text-transform: uppercase;
+} 
+
+.project-item:last-child {
+  margin-right: o;
+}
+
+.project-img {
+  margin-bottom: 45px;
+  width: 350px;
+  height: 380px;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.project-line{
+  width: 55px;
+  height: 8px;
+  background-color: #f7654a;
+  margin-bottom: 15px;
+}
+.project-h3 {
+  color: #404149;
+  margin-bottom: 20px;
+
+}
+
+.project-about {
+  color: #999;
+  width: 350px;
+  height: 83px;
+  flex-shrink: 0;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+
+
+.request {
+  margin: 100px;
+  background-color: #f7654a;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  
+}
+.request-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.request-flex-left {
+  color: #fff;
+  width: 537px;
+  height: 57px;
+
+
+}
+.request-h4 {
+color: #FFF;
+font-family: Oswald;
+font-size: 48px;
+line-height: 71px;
+font-weight: bold;
+letter-spacing: 0.96px;
+margin-bottom: 7px;
+}
+
+.request-h5 {
+color: #FFF;
+font-family: Oswald;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 0.48px;
+
+}
+
+.request-btn {
+  margin-top: 20px;
+  border: none;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  padding: 15px 30px;
+  
+}
+
+
+ @media screen and (max-width: 1280px) {
+    .request {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+  }
+
+  @media screen and (max-width: 780px) {
+    .request-flex {
+      flex-wrap: wrap;
+    }
+    
+  }   
+
+
+
+  .services {
+    padding: 150px 0;
+  }
+
+
+  .text-h2, .text-h4 {
+    color: #000;
+    text-align: center;
+
+  }
+
+  .text-h2 {
+    margin-bottom: 66px;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .text-h4 {
+    margin-bottom: 0 auto;
+    max-width: 172px;
+    font-family: Oswald;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.42px;
+
+  }
+
+
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+
+
+  .services-grid-item {
+    padding: 60px;
+    background-color: #f7f7f7;
+
+
+  }
+  .services-icon {
+    margin: 0 auto 50px;
+    color: var(--Accent, #F7654A);
+    text-align: center;
+    font-family: Font Awesome 5 Pro;
+    font-size: 48px;
+    font-weight: 400;
+
+  }
+ 
+  
+  @media screen and (max-width: 1280px) {
+   .services {
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   }
+   .services-grid-item {
+    width: 100%;
+   }
+    
+  }
+
+  @media screen and (max-width: 780px) {
+     .services-grid {
+      grid-template-columns: repeat(1, 1fr);
+     
+     }
+     
+    
+  }  
